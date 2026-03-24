@@ -229,7 +229,14 @@ export default function AgentChat() {
           </svg>
         ) : (
           <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2a1 1 0 011 1v1.07A7.002 7.002 0 0119 11v1h1a1 1 0 110 2h-1v1a7.002 7.002 0 01-6 6.93V23a1 1 0 11-2 0v-1.07A7.002 7.002 0 015 15v-1H4a1 1 0 110-2h1v-1a7.002 7.002 0 016-6.93V3a1 1 0 011-1zm-5 9v4a5 5 0 0010 0v-4a5 5 0 00-10 0zm3 1a1 1 0 112 0 1 1 0 01-2 0zm4 0a1 1 0 112 0 1 1 0 01-2 0zm-5 3h6a1 1 0 010 2H9a1 1 0 010-2z"/>
+            <rect x="4" y="8" width="16" height="12" rx="3" />
+            <circle cx="12" cy="4" r="1.5" />
+            <line x1="12" y1="5.5" x2="12" y2="8" stroke="currentColor" strokeWidth="2" />
+            <rect x="1" y="12" width="2" height="4" rx="1" fill="currentColor" />
+            <rect x="21" y="12" width="2" height="4" rx="1" fill="currentColor" />
+            <circle cx="9" cy="13" r="1.5" fill="#131313" />
+            <circle cx="15" cy="13" r="1.5" fill="#131313" />
+            <rect x="9" y="16.5" width="6" height="1.5" rx="0.75" fill="#131313" />
           </svg>
         )}
       </button>
@@ -240,7 +247,12 @@ export default function AgentChat() {
           {/* Header */}
           <div className="px-4 py-3 bg-surface-container-highest/50 border-b border-outline-variant/20 flex items-center gap-3">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2a1 1 0 011 1v1.07A7.002 7.002 0 0119 11v1h1a1 1 0 110 2h-1v1a7.002 7.002 0 01-6 6.93V23a1 1 0 11-2 0v-1.07A7.002 7.002 0 015 15v-1H4a1 1 0 110-2h1v-1a7.002 7.002 0 016-6.93V3a1 1 0 011-1zm-5 9v4a5 5 0 0010 0v-4a5 5 0 00-10 0zm3 1a1 1 0 112 0 1 1 0 01-2 0zm4 0a1 1 0 112 0 1 1 0 01-2 0zm-5 3h6a1 1 0 010 2H9a1 1 0 010-2z"/>
+              <rect x="4" y="8" width="16" height="12" rx="3" />
+              <circle cx="12" cy="4" r="1.5" />
+              <line x1="12" y1="5.5" x2="12" y2="8" stroke="currentColor" strokeWidth="2" />
+              <circle cx="9" cy="13" r="1.5" fill="#131313" />
+              <circle cx="15" cy="13" r="1.5" fill="#131313" />
+              <rect x="9" y="16.5" width="6" height="1.5" rx="0.75" fill="#131313" />
             </svg>
             <div className="flex-1">
               <div className="text-sm font-headline font-bold text-on-surface">
