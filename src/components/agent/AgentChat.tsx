@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { AgentMessage } from "@/types";
 import { AGENT_SUGGESTIONS } from "@/lib/agent-system-prompt";
 import { v4 as uuidv4 } from "uuid";
+import { Bot, X } from "lucide-react";
 
 // Client-side agent that uses pattern matching for responses
 // In production, this would call an API route that uses OpenRouter
@@ -224,20 +225,9 @@ export default function AgentChat() {
         aria-label="Open Planning Assistant"
       >
         {isOpen ? (
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
+          <X size={24} strokeWidth={2.5} />
         ) : (
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
-            <rect x="4" y="8" width="16" height="12" rx="3" />
-            <circle cx="12" cy="4" r="1.5" />
-            <line x1="12" y1="5.5" x2="12" y2="8" stroke="currentColor" strokeWidth="2" />
-            <rect x="1" y="12" width="2" height="4" rx="1" fill="currentColor" />
-            <rect x="21" y="12" width="2" height="4" rx="1" fill="currentColor" />
-            <circle cx="9" cy="13" r="1.5" fill="#131313" />
-            <circle cx="15" cy="13" r="1.5" fill="#131313" />
-            <rect x="9" y="16.5" width="6" height="1.5" rx="0.75" fill="#131313" />
-          </svg>
+          <Bot size={28} strokeWidth={2} />
         )}
       </button>
 
@@ -246,14 +236,7 @@ export default function AgentChat() {
         <div className="fixed bottom-28 right-6 z-[200] w-96 max-w-[calc(100vw-3rem)] h-[500px] max-h-[calc(100vh-10rem)] bg-surface-container-low border border-outline-variant/20 flex flex-col shadow-2xl">
           {/* Header */}
           <div className="px-4 py-3 bg-surface-container-highest/50 border-b border-outline-variant/20 flex items-center gap-3">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-              <rect x="4" y="8" width="16" height="12" rx="3" />
-              <circle cx="12" cy="4" r="1.5" />
-              <line x1="12" y1="5.5" x2="12" y2="8" stroke="currentColor" strokeWidth="2" />
-              <circle cx="9" cy="13" r="1.5" fill="#131313" />
-              <circle cx="15" cy="13" r="1.5" fill="#131313" />
-              <rect x="9" y="16.5" width="6" height="1.5" rx="0.75" fill="#131313" />
-            </svg>
+            <Bot size={20} className="text-primary flex-shrink-0" strokeWidth={2} />
             <div className="flex-1">
               <div className="text-sm font-headline font-bold text-on-surface">
                 ST6 Planning Assistant
