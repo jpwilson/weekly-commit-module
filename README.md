@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ST6 — Weekly Commit Module
+
+Production-ready micro-frontend replacing 15-Five with RCDO-linked weekly planning.
+
+**Live demo:** [st6.46-225-235-124.sslip.io](https://st6.46-225-235-124.sslip.io)
+
+> _Hosted on [Hetzner Cloud](https://www.hetzner.com/cloud) (ARM CAX21, Nuremberg) via [Coolify](https://coolify.io) — migrated off Vercel (`st6.vercel.app`) to cut demo hosting costs._
+
+Built with [Next.js](https://nextjs.org).
 
 ## Getting Started
 
